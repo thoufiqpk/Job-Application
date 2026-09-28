@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f7;
+    color: #222;
+}
+
+/* Main Form Container */
+.form-container {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #001f3f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 31, 63, 0.2);
+}
+
+/* Header */
+.header {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 8px 0 0;
+}
+
+/* Form */
+form {
+    padding: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+/* Section Heading */
+.section-title {
+    background-color: #003366;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    border: 1px solid #ccd6e0;
+}
+
+.label {
+    width: 35%;
+    background-color: #f0f4f8;
+    font-weight: bold;
+    color: #001f3f;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8095aa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #001f3f;
+    box-shadow: 0 0 4px rgba(0, 31, 63, 0.4);
+}
+
+/* Checkboxes and Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+label {
+    margin-right: 20px;
+    line-height: 2;
+}
+
+/* Required Symbol */
+.required {
+    color: red;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 12px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #001f3f;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #003d73;
+}
+
+/* Reset Button */
+.reset-btn {
+    background-color: #b8c4d0;
+    color: #001f3f;
+}
+
+.reset-btn:hover {
+    background-color: #9eacba;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .label {
+        width: 40%;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    label {
+        display: block;
+        margin-right: 0;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}

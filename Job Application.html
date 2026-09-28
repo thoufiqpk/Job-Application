@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <link rel="stylesheet" href="Job Application.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <div class="header">
+        <h1>Job Application Form</h1>
+        <p>Please complete all required information</p>
+    </div>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Personal Information
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Name <span class="required">*</span></td>
+                <td>
+                    <input type="text" name="name"
+                           placeholder="Enter your name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Age <span class="required">*</span></td>
+                <td>
+                    <input type="number" name="age"
+                           min="18" max="100"
+                           placeholder="Enter your age" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Password <span class="required">*</span></td>
+                <td>
+                    <input type="password" name="password"
+                           placeholder="Enter password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Retype Password <span class="required">*</span></td>
+                <td>
+                    <input type="password" name="retype_password"
+                           placeholder="Retype password" required>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Security Information -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Security Information
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Security Question</td>
+                <td>
+                    <select name="security_question">
+                        <option value="">-- Select a question --</option>
+                        <option>What is your mother's maiden name?</option>
+                        <option>What was your first pet's name?</option>
+                        <option>What is your favorite city?</option>
+                        <option>What was your first school?</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Security Answer</td>
+                <td>
+                    <input type="text" name="security_answer"
+                           placeholder="Enter your answer">
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Contact Information -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Contact Information
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Email ID <span class="required">*</span></td>
+                <td>
+                    <input type="email" name="email"
+                           placeholder="example@email.com" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Home Phone Number</td>
+                <td>
+                    <input type="tel" name="home_phone"
+                           placeholder="Enter home phone number">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Office Phone Number</td>
+                <td>
+                    <input type="tel" name="office_phone"
+                           placeholder="Enter office phone number">
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Languages Known -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Languages Known
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Select Languages</td>
+                <td>
+                    <label>
+                        <input type="checkbox"
+                               name="language"
+                               value="Malayalam">
+                        Malayalam
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="language"
+                               value="English">
+                        English
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="language"
+                               value="Hindi">
+                        Hindi
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Application Documents -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Application Documents
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Upload CV</td>
+                <td>
+                    <input type="file"
+                           name="cv"
+                           accept=".pdf,.doc,.docx">
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Form Controls -->
+        <table>
+            <tr>
+                <th colspan="2" class="section-title">
+                    Form Controls
+                </th>
+            </tr>
+
+            <tr>
+                <td class="label">Application Type</td>
+                <td>
+                    <label>
+                        <input type="radio"
+                               name="application_type"
+                               value="full-time">
+                        Full Time
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="application_type"
+                               value="part-time">
+                        Part Time
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="application_type"
+                               value="internship">
+                        Internship
+                    </label>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- Form Buttons -->
+        <div class="buttons">
+
+            <button type="submit" class="submit-btn">
+                Submit
+            </button>
+
+            <button type="reset" class="reset-btn">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
